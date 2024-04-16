@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe39a726.css",
+    "main.js": "/static/js/main.bb5de338.js",
+    "static/js/453.25a949d1.chunk.js": "/static/js/453.25a949d1.chunk.js",
+    "static/media/FangSong.ttf": "/static/media/FangSong.accbffdedc64fa59931c.ttf",
+    "static/media/DingTalk-JinBuTi.ttf": "/static/media/DingTalk-JinBuTi.a0bb3c3254df23cd2906.ttf",
+    "static/media/DingTalk-JinBuTi.woff": "/static/media/DingTalk-JinBuTi.faa33a738b110567728e.woff",
+    "static/media/DingTalk-JinBuTi.woff2": "/static/media/DingTalk-JinBuTi.29d20d631c0dba37e90b.woff2",
+    "static/media/Myfavicon2.ico": "/static/media/Myfavicon2.89b698b3117731da229f.ico",
+    "static/media/iconfont.ttf?t=1713267389898": "/static/media/iconfont.335001670ddea11e89b7.ttf",
+    "static/media/iconfont.woff?t=1713267389898": "/static/media/iconfont.35b93b2d5c998608de7e.woff",
+    "static/media/iconfont.ttf?t=1713267409885": "/static/media/iconfont.ff1e35215f53e1b90ea6.ttf",
+    "static/media/iconfont.woff2?t=1713267389898": "/static/media/iconfont.41cb632a2c6cd3b236ad.woff2",
+    "static/media/iconfont.woff?t=1713267409885": "/static/media/iconfont.4ab757d1ee94f0317b8c.woff",
+    "static/media/iconfont.woff2?t=1713267409885": "/static/media/iconfont.5c7cf50782a41c92d188.woff2",
+    "index.html": "/index.html",
+    "main.fe39a726.css.map": "/static/css/main.fe39a726.css.map",
+    "main.bb5de338.js.map": "/static/js/main.bb5de338.js.map",
+    "453.25a949d1.chunk.js.map": "/static/js/453.25a949d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe39a726.css",
+    "static/js/main.bb5de338.js"
+  ]
+}
