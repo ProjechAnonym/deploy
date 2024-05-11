@@ -1,24 +1,24 @@
 #!/bin/bash
 
-# Ê¹ÓÃGitHub API»ñÈ¡×îÐÂµÄ·¢ÐÐ°æÐÅÏ¢£¨Àï±ßÓÐ×îÐÂµÄ°æ±¾ºÅ±êÊ¶£©
+# ä½¿ç”¨GitHub APIèŽ·å–æœ€æ–°çš„å‘è¡Œç‰ˆä¿¡æ¯ï¼ˆé‡Œè¾¹æœ‰æœ€æ–°çš„ç‰ˆæœ¬å·æ ‡è¯†ï¼‰
 response=$(curl -s https://api.github.com/repos/IrineSistiana/mosdns/releases/latest)
 
-# ÌáÈ¡ÏÂÔØÁ´½Ó £¨tag_nameÊôÐÔ¼´Îª°æ±¾ºÅÊôÐÔ cutÃüÁî»ñÈ¡°æ±¾ºÅÊôÐÔµÄÖµ awkÃüÁî°Ñ°æ±¾ºÅÖÐµÄv×Ö·ûÉ¾³ý£©
+# æå–ä¸‹è½½é“¾æŽ¥ ï¼ˆtag_nameå±žæ€§å³ä¸ºç‰ˆæœ¬å·å±žæ€§ cutå‘½ä»¤èŽ·å–ç‰ˆæœ¬å·å±žæ€§çš„å€¼ awkå‘½ä»¤æŠŠç‰ˆæœ¬å·ä¸­çš„vå­—ç¬¦åˆ é™¤ï¼‰
 version=$(echo "$response" | grep 'tag_name' | cut -d'"' -f4 | awk '{print substr($0, 2, length($0) - 1)'})
 
-# Æ´½ÓÏÂÔØÁ¬½Ó
+# æ‹¼æŽ¥ä¸‹è½½è¿žæŽ¥
 download_url=https://github.com/IrineSistiana/mosdns/releases/download/v$version/mosdns-linux-amd64.zip
-echo ¡°ÏÂÔØmosdnsÍê³É¡±
-# Ê¹ÓÃcurlÏÂÔØ×îÐÂ·¢ÐÐ°æ£¨-LÒâË¼ÊÇÖ§³ÖÖØ¶¨Ïò£¬ºÜ¶àÏÂÔØ¶¼ÊÇÖØ¶¨ÏòÏÂÔØ  -oÊÇ×Ô¶¨ÒåÃû×Ö£©
+echo â€œä¸‹è½½mosdnså®Œæˆâ€
+# ä½¿ç”¨curlä¸‹è½½æœ€æ–°å‘è¡Œç‰ˆï¼ˆ-Læ„æ€æ˜¯æ”¯æŒé‡å®šå‘ï¼Œå¾ˆå¤šä¸‹è½½éƒ½æ˜¯é‡å®šå‘ä¸‹è½½  -oæ˜¯è‡ªå®šä¹‰åå­—ï¼‰
 curl -L -o mosdns-linux-amd64.zip $download_url
 
-# Ê¹ÓÃGitHub API»ñÈ¡×îÐÂµÄ·¢ÐÐ°æÐÅÏ¢£¨Àï±ßÓÐ×îÐÂµÄ°æ±¾ºÅ±êÊ¶£©
+# ä½¿ç”¨GitHub APIèŽ·å–æœ€æ–°çš„å‘è¡Œç‰ˆä¿¡æ¯ï¼ˆé‡Œè¾¹æœ‰æœ€æ–°çš„ç‰ˆæœ¬å·æ ‡è¯†ï¼‰
 response=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest)
 
-# ÌáÈ¡ÏÂÔØÁ´½Ó £¨tag_nameÊôÐÔ¼´Îª°æ±¾ºÅÊôÐÔ cutÃüÁî»ñÈ¡°æ±¾ºÅÊôÐÔµÄÖµ awkÃüÁî°Ñ°æ±¾ºÅÖÐµÄv×Ö·ûÉ¾³ý£©
+# æå–ä¸‹è½½é“¾æŽ¥ ï¼ˆtag_nameå±žæ€§å³ä¸ºç‰ˆæœ¬å·å±žæ€§ cutå‘½ä»¤èŽ·å–ç‰ˆæœ¬å·å±žæ€§çš„å€¼ awkå‘½ä»¤æŠŠç‰ˆæœ¬å·ä¸­çš„vå­—ç¬¦åˆ é™¤ï¼‰
 version=$(echo "$response" | grep 'tag_name' | cut -d'"' -f4 | awk '{print substr($0, 2, length($0) - 1)'})
 
-# Æ´½ÓÏÂÔØÁ¬½Ó
+# æ‹¼æŽ¥ä¸‹è½½è¿žæŽ¥
 download_url=https://github.com/SagerNet/sing-box/releases/download/v$version/sing-box-$version-linux-amd64.tar.gz
 curl -L -o sing-box-$version-linux-amd64.tar.gz $download_url
 
@@ -265,3 +265,4 @@ EOF
 
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 echo "nameserver 192.168.233.155" > /etc/resolv.conf
+echo "nameserver 223.5.5.5" > /etc/resolv.conf
