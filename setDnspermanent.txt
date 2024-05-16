@@ -1,0 +1,2 @@
+apt-get install -y systemd-resolved
+echo "DNS=8.8.8.8 1.1.1.1" >> /etc/systemd/resolved.conf
